@@ -1,0 +1,20 @@
+{
+	"name": "ddb-foreign-keys",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"run": "TERRAFORM_OUTPUT=\"$(terraform output --json)\" node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"type": "module",
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.37.0",
+		"@aws-sdk/util-dynamodb": "^3.38.0",
+		"chalk": "^4.1.2",
+		"cli-table3": "^0.6.0",
+		"lodash": "^4.17.21"
+	}
+}
